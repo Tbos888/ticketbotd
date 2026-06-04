@@ -24,7 +24,7 @@ const client = new Client({
 // ========================================================
 // ⚙️ ตั้งค่าความปลอดภัยและไอดีระบบ (อิงตามข้อมูลจริงของคุณ)
 // ========================================================
-const TOKEN = process.env.DISCORD_TOKEN;
+const TOKEN = process.env.VERIFY_BOT_TOKEN;
 const ROLE_ID = "1506712792722440203";         // ID ยศ Member ของคุณ
 const LOG_CHANNEL_ID = "1510475926591242390";  // ID ห้อง Log แอดมินของคุณ
 const MIN_ACCOUNT_AGE_DAYS = 7;               // ตรวจจับไอดีสแปม (ต่ำกว่า 7 วันบล็อกทันที)
@@ -193,5 +193,4 @@ client.on('interactionCreate', async (interaction) => {
 
 // รันบอททำงาน
 client.login(TOKEN);
-// เรียกให้บอทยืนยันตัวตนทำงานควบคู่ไปกับระบบเดิม
 require('./verify-bot.js');
