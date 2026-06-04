@@ -24,7 +24,7 @@ const client = new Client({
 // ========================================================
 // ⚙️ ตั้งค่าความปลอดภัยและไอดีระบบ (อิงตามข้อมูลจริงของคุณ)
 // ========================================================
-const TOKEN = "MTUxMTg4ODAyMDgzNDYxNTUwNw.GpCi-A.J7u1rFwQxe5P_fEbOdhTh3qty7_jTp-BJVbIQs";  // ใส่รหัส Token บอทของคุณที่นี่
+const TOKEN = process.env.DISCORD_TOKEN;
 const ROLE_ID = "1506712792722440203";         // ID ยศ Member ของคุณ
 const LOG_CHANNEL_ID = "1510475926591242390";  // ID ห้อง Log แอดมินของคุณ
 const MIN_ACCOUNT_AGE_DAYS = 7;               // ตรวจจับไอดีสแปม (ต่ำกว่า 7 วันบล็อกทันที)
